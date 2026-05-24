@@ -1,0 +1,8 @@
+{
+  "name": "3D Starry Portfolio Background",
+  "description": "An interactive, highly polished 3D portfolio showcase with a customizable starry background using React Three Fiber and Shaders.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
