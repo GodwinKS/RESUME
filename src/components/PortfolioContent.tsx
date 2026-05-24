@@ -123,7 +123,7 @@ export default function PortfolioContent({
   const leadership = [
     { role: 'Technical Club Member', organization: 'CYSCOM (Cybersecurity Club, VIT Chennai)', desc: 'Focusing on active cyber security challenges.' },
     { role: 'Core Member', organization: 'Fraternity of Young Innovators (VIT Chennai)', desc: 'Developing cross-disciplinary collaborative projects.' },
-    { role: 'State Scholar', organization: 'NUMATS Math Talent Search', desc: 'Selected as one of only 15 students state-wide.' },
+    { role: 'State Scholar', organization: 'NUMATS Math Talent Search', desc: 'Selected as one of only 24 students state-wide.' },
     { role: 'Technical Head', organization: 'Little Kites (St. Thomas HSS)', desc: 'Led technical workshops on game and application design.' },
   ];
 
