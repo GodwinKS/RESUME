@@ -28,10 +28,22 @@ export default function PortfolioContent({
   activeSection,
   setActiveSection,
 }: PortfolioContentProps) {
-  const [activeProject, setActiveProject] = useState<string | null>(null);
+  const [activeProject, setActiveProject] = useState<string | null>('deone');
   const [copiedLabel, setCopiedLabel] = useState<string | null>(null);
 
   const projects: ProjectItem[] = [
+    {
+      id: 'deone',
+      title: 'DeOne: Agentic AI Voice Assistant & Personal Ecosystem',
+      tagline: 'Dual-Agent Voice assistant & Systems Integration Ecosystem',
+      description:
+        'Originally initiated in 8th grade as a modular diagnostic AI assistant, this personal ecosystem has continuously evolved into DeOne—a high-performance, dual-agent voice intelligence framework. Engineered for real-time human-like voice conversations with intelligent prompt-routing, low-latency Whisper/Gemini integration, expressive voice synthesis, and autonomous command execution.',
+      tech: ['Python', 'WebSockets', 'Gemini API', 'Whisper', 'TTS', 'Shell Scripting', 'React'],
+      role: 'Lead Systems & Voice Assistant Developer',
+      link: 'https://youtu.be/Pg73K6MdaOE',
+      youtubeUrl: 'https://www.youtube.com/embed/Pg73K6MdaOE',
+      spaceCoordinates: [0.2, 1.5, -1.0],
+    },
     {
       id: 'saathi',
       title: 'Saathi-OS',
@@ -64,17 +76,6 @@ export default function PortfolioContent({
       role: 'IoT Systems Integrator',
       link: '#',
       spaceCoordinates: [0.5, 0.5, -2.5],
-    },
-    {
-      id: 'ai-ecosystem',
-      title: 'Personal AI Assistant Ecosystem',
-      tagline: 'Modular Diagnostic Diagnostic Architecture',
-      description:
-        'Initiated development in 8th grade and continuously iterated and updated a modular diagnostic assistant. Served as a foundational catalyst for pursuing software engineering, self-taught programming, and systems integration.',
-      tech: ['Python', 'Shell Scripting', 'Systems Integration'],
-      role: 'Creator & Developer',
-      link: '#',
-      spaceCoordinates: [-0.8, -1.2, -1.5],
     },
   ];
 
@@ -306,6 +307,18 @@ export default function PortfolioContent({
                               <p className="text-xs text-slate-300 leading-relaxed font-sans scrollbar-thin select-text">
                                 {proj.description}
                               </p>
+
+                              {proj.youtubeUrl && (
+                                <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-xl border border-slate-900 shadow-lg mt-3 bg-slate-950">
+                                  <iframe
+                                    src={proj.youtubeUrl}
+                                    className="absolute top-0 left-0 w-full h-full border-none"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                    title={`${proj.title} Demo Video`}
+                                  />
+                                </div>
+                              )}
                               
                               <div className="pt-2">
                                 <span className="text-[9px] font-mono text-slate-500 uppercase tracking-widest block mb-2">

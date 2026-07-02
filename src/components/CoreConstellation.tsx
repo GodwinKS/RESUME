@@ -45,7 +45,7 @@ export default function CoreConstellation({
     { name: 'Saathi-OS', coord: [1.6, 0.8, -0.4], color: '#00f2ff' },
     { name: 'GrainGuard AI', coord: [-1.4, -0.9, 0.6], color: '#6366f1' },
     { name: 'IoT Telemetry', coord: [-0.9, 1.3, -0.8], color: '#ec4899' },
-    { name: 'AI Ecosystem', coord: [1.1, -1.2, 0.7], color: '#10b981' },
+    { name: 'DeOne & Ecosystem', coord: [1.1, -1.2, 0.7], color: '#10b981' },
   ], []);
 
   // Cohesive visual-matching colors determined by theme preset

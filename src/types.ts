@@ -25,4 +25,5 @@ export interface ProjectItem {
   role: string;
   link: string;
   spaceCoordinates: [number, number, number]; // Coordinates for camera focuses
+  youtubeUrl?: string;
 }
